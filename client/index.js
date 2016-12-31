@@ -1,14 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import io from 'socket.io-client'
+import Routes from './routes';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        Project Starter
-      </div>
-    )
-  }
-}
-
-ReactDOM.render(<App />, document.querySelector('#app'));
+ReactDOM.render(<Routes />, document.querySelector('#app'));

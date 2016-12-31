@@ -1,6 +1,61 @@
 <html>
+<head>
+    <style>
+        .resources.container {
+            width: 100%;
+            height: 150px;
+            display: inline-block;
+            background-color: gainsboro;
+        }
+        .deck {
+            background-color: brown;
+            border: 2px solid black;
+            width: 100px;
+            height: 150px;
+            display: inline-block;
+        }
+
+        .card {
+            border: 2px solid black;
+            width: 100px;
+            height: 150px;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .card.tapped {
+            width: 150px;
+            height: 100px;
+        }
+
+        .hand {
+            display: inline-block
+        }
+
+        .card.creature.tapped {
+            background-color: red;
+        }
+
+        .mana {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            vertical-align: center;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .mana.selected {
+            background-color: yellow;
+        }
+
+        .mana.used {
+            background-color: grey;
+        }
+    </style>
+</head>
 <body>
-<div id="app"><div>
+    <div id="app"><div>
     <script src="/index.js"></script>
 </body>
 </html>
